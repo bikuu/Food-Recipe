@@ -1,5 +1,5 @@
 {
-  "name": "forkify",
+  "name": "foodrecipe",
   "version": "1.0.0",
   "description": "Recipe application",
   "default": "index.html",
@@ -7,15 +7,17 @@
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
   },
-  "author": "Jonas Schedtmann",
+  "author": "Bibek Lama",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.0.0-beta.1",
+    "@parcel/transformer-sass": "^2.8.0",
+    "parcel": "^2.8.0",
     "sass": "^1.26.10"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "fractional": "^1.0.0",
     "regenerator-runtime": "^0.13.7"
-  }
+  },
+  "main": "index.js"
 }
