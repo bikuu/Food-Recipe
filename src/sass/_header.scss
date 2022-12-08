@@ -1,6 +1,6 @@
 .header {
   grid-area: head;
-  background-color: $color-grey-light-1;
+  background-color: $color--light-1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,7 +22,7 @@
 
   &:focus-within {
     transform: translateY(-2px);
-    box-shadow: 0 0.7rem 3rem rgba($color-grey-dark-1, 0.08);
+    box-shadow: 0 0.7rem 3rem rgba($color--dark-1, 0.08);
   }
 
   &__field {
@@ -38,7 +38,7 @@
     }
 
     &::placeholder {
-      color: $color-grey-light-3;
+      color: $color--light-3;
     }
 
     @media only screen and (max-width: $bp-medium) {
@@ -99,7 +99,7 @@
     }
 
     &:hover {
-      background-color: $color-grey-light-2;
+      background-color: $color--light-2;
     }
   }
 }
@@ -112,7 +112,7 @@
   z-index: 10;
   width: 40rem;
   background-color: #fff;
-  box-shadow: 0 0.8rem 5rem 2rem rgba($color-grey-dark-1, 0.1);
+  box-shadow: 0 0.8rem 5rem 2rem rgba($color--dark-1, 0.1);
 
   visibility: hidden;
   opacity: 0;
@@ -132,7 +132,7 @@
     transition: all 0.3s;
 
     &:hover {
-      background-color: $color-grey-light-2;
+      background-color: $color--light-2;
     }
   }
 
