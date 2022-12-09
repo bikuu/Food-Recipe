@@ -12,19 +12,26 @@
 .pagination {
   margin-top: auto;
   padding: 0 3.5rem;
+  display: flex;
+  justify-content: space-around;
 
   &::after {
     content: '';
-    display: table;
     clear: both;
+    display: table;
+   
   }
 
   &__btn {
     &--prev {
-      float: left;
+      justify-self: left;
+    }
+    &--curr {
+      justify-self: center;
     }
     &--next {
-      float: right;
+      justify-self: right;
+      
     }
   }
 }

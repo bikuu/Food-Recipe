@@ -23,6 +23,9 @@ class PaginationView extends View {
     // Page 1, and there are other pages
     if (curPage === 1 && numPages > 1) {
       return `
+      <button data-goto="${curPage}" class="btn--inline pagination__btn--curr">
+           <span> ${curPage}</span>
+        </button>
         <button data-goto="${
           curPage + 1
         }" class="btn--inline pagination__btn--next">
@@ -58,6 +61,9 @@ class PaginationView extends View {
             <use href="${icons}#icon-arrow-left"></use>
           </svg>
           <span>Page ${curPage - 1}</span>
+        </button>
+        <button data-goto="${curPage}" class="btn--inline pagination__btn--curr">
+           <span> ${curPage}</span>
         </button>
         <button data-goto="${
           curPage + 1
